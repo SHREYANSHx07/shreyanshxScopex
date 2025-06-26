@@ -35,17 +35,26 @@ if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
-from django.contrib import admin
-from django.urls import path, include
+# from django.contrib import admin
+# from django.urls import path, include
 
 # urlpatterns = [
 #     path('grappelli/', include('grappelli.urls')),  # for grappelli
 #     path('admin/', admin.site.urls),
 # ]
-from django.shortcuts import redirect
+# from django.shortcuts import redirect
 
-urlpatterns = [
-    path('', lambda request: redirect('/admin/')),
-    path('grappelli/', include('grappelli.urls')),
-    path('admin/', admin.site.urls),
-]
+# urlpatterns = [
+#     path('', lambda request: redirect('/admin/')),
+#     path('grappelli/', include('grappelli.urls')),
+#     path('admin/', admin.site.urls),
+# ]
+# from django.shortcuts import redirect
+# from django.urls import path, include
+
+# urlpatterns = [
+#     path('grappelli/', include('grappelli.urls')),
+#     path('admin/', admin.site.urls),
+#     path('accounts/', include('django.contrib.auth.urls')),
+#     path('', lambda request: redirect('/admin/')),  # Root redirect
+# ]
